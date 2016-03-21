@@ -31,8 +31,11 @@ int fs_init(const char *argv0)
         PHYSFS_permitSymbolicLinks(1);
         return 1;
     }
-
+#ifdef ANDROID
+    return 1;
+#else
     return 0;
+#endif
 }
 
 int fs_quit(void)
