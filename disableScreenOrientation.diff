@@ -1,0 +1,13 @@
+diff --git a/project/java/MainActivity.java b/project/java/MainActivity.java
+index 92c8bf4..c71a63d 100644
+--- a/project/java/MainActivity.java
++++ b/project/java/MainActivity.java
+@@ -1485,7 +1485,7 @@ public class MainActivity extends Activity
+ 			return;
+ 		}
+ 		if( android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.GINGERBREAD )
+-			setRequestedOrientation(Globals.HorizontalOrientation ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
++			setRequestedOrientation(Globals.HorizontalOrientation ? ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+ 		else
+ 			setRequestedOrientation(Globals.HorizontalOrientation ? ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+ 	}
